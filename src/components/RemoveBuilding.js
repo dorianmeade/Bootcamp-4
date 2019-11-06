@@ -4,15 +4,17 @@ class RemoveBuilding extends React.Component {
 
     render()     {
 
-        const { data, selectedBuilding, deleteUpdate } = this.props;
+        const { selectedBuilding, deleteUpdate } = this.props;
 
-        const info = data[selectedBuilding - 1]
-    
+        
         if(selectedBuilding !== 0){
             return(
                 <div> 
-                   <i onClick={() => deleteUpdate(info.id)}> Click here to remove the presented building</i>            
+                   <i
+                    onClick={() => deleteUpdate(selectedBuilding)}> Click here to remove the presented building</i>            
                 </div>
+                        
+
              )
         }
         else{

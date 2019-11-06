@@ -61,14 +61,16 @@ class App extends React.Component {
 
   deleteUpdate(id)
   {
-    let data = this.props.data
-
-    data = data.splice(id - 1, 1)
+    var data = this.props.data
+  
+    data.splice(id - 1, 1)
 
     this.setState({
       data: this.props.data,
       selectedBuilding: 0
-    })
+    }) 
+
+    
   }
   render() {
     return (

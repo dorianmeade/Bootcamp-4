@@ -3,7 +3,7 @@ import React from 'react';
 class BuilingList extends React.Component {
 
 	render() {
-		console.log('This is my directory file', this.props.data);
+		//console.log('This is my directory file', this.props.data);
 		const { data, filterText, selectedUpdate } = this.props;
 
 		const buildingList = data
